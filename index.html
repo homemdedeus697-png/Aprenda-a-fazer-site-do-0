@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Do Zero ao Site no Ar — Vitra Sites</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070b;--card:#12121a;--tx:#ecebf5;--mut:#9a98b0;--ac:#6d4aff;--ac2:#a99bff;--ln:#26253a;--hd:'Sora',system-ui,sans-serif;--bd:'Source Serif 4',Georgia,serif;box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--tx);font:18px/1.7 var(--bd);padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.w{max-width:720px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--hd);line-height:1.15;margin:0}
+.cover{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0;background:radial-gradient(900px 500px at 80% -10%,#3a22b8 0,transparent 60%)}
+.cover h1{font-size:clamp(2.8rem,11vw,5.2rem);font-weight:800;letter-spacing:-.03em}
+.cover h1 span{color:var(--ac2)}
+.cover p{color:var(--mut);max-width:30em;margin:22px 0 0}
+.brand{font-family:var(--hd);font-weight:600;margin-top:48px;color:var(--ac2)}
+.sec{padding:64px 0;border-top:1px solid var(--ln)}
+.sec h2{font-size:clamp(1.7rem,6vw,2.4rem);font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
+.sec h3{font-size:1.15rem;font-weight:600;margin:32px 0 8px;color:var(--ac2)}
+.sub{color:var(--mut);margin:0 0 24px}
+p{margin:0 0 16px}
+ul,ol{padding-left:22px;margin:0 0 16px}li{margin-bottom:6px}
+a{color:var(--ac2)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--ac2);outline-offset:3px}
+.toc{list-style:none;padding:0;columns:1}
+.toc li{border-bottom:1px solid var(--ln);margin:0}
+.toc a{display:flex;gap:14px;padding:12px 0;text-decoration:none;color:var(--tx);font-family:var(--hd);font-size:.95rem}
+.toc b{color:var(--ac);min-width:2ch}
+.tip,.warn{border-radius:12px;padding:16px 18px;margin:20px 0;background:var(--card);border-left:4px solid var(--ac)}
+.warn{border-color:#ffb020}
+.tip b,.warn b{font-family:var(--hd);display:block;margin-bottom:4px}
+.pr{position:relative;background:#0d0d14;border:1px solid var(--ln);border-radius:12px;padding:16px 16px 16px;margin:16px 0;font:14.5px/1.6 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;color:#d9d6f5}
+.pr button{display:block;margin:0 0 12px auto;font:600 13px var(--hd);background:var(--ac);color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:20px 0;font-family:var(--hd);font-size:.85rem}
+.flow span{background:var(--card);border:1px solid var(--ln);border-radius:999px;padding:8px 14px}
+.flow i{color:var(--ac2);font-style:normal}
+.ck{list-style:none;padding:0}.ck li{padding-left:30px;position:relative}.ck li::before{content:"☐";position:absolute;left:0;color:var(--ac2)}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem;font-family:var(--hd)}
+th,td{border-bottom:1px solid var(--ln);padding:10px 12px;text-align:left;white-space:nowrap}th{color:var(--ac2)}
+dt{font-family:var(--hd);font-weight:600;margin-top:14px}dd{margin:2px 0 0;color:var(--mut)}
+footer{padding:48px 0;color:var(--mut);font-size:.9rem;border-top:1px solid var(--ln)}
+@media(min-width:700px){.toc{columns:2;column-gap:32px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="cover"><div class="w">
+<h1>Do zero ao <span>site no ar</span></h1>
+<p>O guia prático para criar sites com IA, conquistar clientes e publicar projetos profissionais.</p>
+<div class="brand">Vitra Sites</div>
+</div></header>
+
+<main class="w">
+<section class="sec" id="sumario">
+<h2>Sumário</h2>
+<p class="sub">Leia na ordem ou vá direto ao que precisa.</p>
+<ol class="toc">
+<li><a href="#c1"><b>1</b>Mentalidade e oportunidades</a></li>
+<li><a href="#c2"><b>2</b>Como encontrar clientes</a></li>
+<li><a href="#c3"><b>3</b>Como encontrar o responsável</a></li>
+<li><a href="#c4"><b>4</b>Como prospectar e vender</a></li>
+<li><a href="#c5"><b>5</b>Como usar o ChatGPT</a></li>
+<li><a href="#c6"><b>6</b>Como criar um site do zero</a></li>
+<li><a href="#c7"><b>7</b>Publicar usando o GitHub</a></li>
+<li><a href="#c8"><b>8</b>Hospedar usando a Vercel</a></li>
+<li><a href="#c9"><b>9</b>Apresentar e entregar</a></li>
+<li><a href="#c10"><b>10</b>Preços e profissionalização</a></li>
+<li><a href="#c11"><b>11</b>Rotina de prospecção</a></li>
+<li><a href="#c12"><b>12</b>Biblioteca de prompts</a></li>
+<li><a href="#c13"><b>13</b>Checklist profissional</a></li>
+<li><a href="#glo"><b>·</b>Glossário e referências</a></li>
+</ol>
+<div class="tip"><b>Antes de começar</b>Este material ensina um processo. Ele não promete clientes, vendas ou ganhos. A IA acelera o trabalho, mas você revisa tudo. Os diagramas e exemplos são ilustrativos; nenhuma empresa ou contato citado é real.</div>
+</section>
+
+<section class="sec" id="c1">
+<h2>1. Mentalidade e oportunidades</h2>
+<p class="sub">Vender uma solução, não só um arquivo HTML.</p>
+<p>Muitos negócios locais têm só um perfil de rede social. Isso funciona, mas limita: o cliente não encontra horários, preços, localização e contato em um só lugar. Um site bem feito resolve esse problema.</p>
+<h3>O que você pode oferecer</h3>
+<ul><li>Site institucional (apresenta a empresa e leva ao WhatsApp).</li><li>Catálogo digital e cardápio digital.</li><li>Site para imobiliárias, clínicas, barbearias, pizzarias, lojas e estética automotiva.</li><li>Ajustes, correções e manutenção de sites existentes.</li></ul>
+<h3>Site ou solução?</h3>
+<p>Vender um site é entregar páginas. Vender uma solução é entender a meta do dono: mais pedidos de orçamento, agendamentos organizados, cardápio fácil de atualizar. Comece sempre perguntando qual problema o site precisa resolver.</p>
+</section>
+
+<section class="sec" id="c2">
+<h2>2. Como encontrar clientes</h2>
+<p class="sub">Pesquisa com método, registrada em planilha.</p>
+<div class="flow"><span>Pesquisar</span><i>→</i><span>Verificar</span><i>→</i><span>Registrar</span><i>→</i><span>Classificar</span></div>
+<h3>Onde pesquisar</h3>
+<ul><li><b>Lupify:</b> programa de captação de clientes. Pesquise por nicho e cidade para montar sua lista de leads e separe as empresas que ainda não têm site.</li><li><b>Google Search:</b> confira cada lead da Lupify pesquisando o nome da empresa. Sem resultado próprio, ou só diretórios, é uma pista.</li><li><b>Instagram:</b> veja o link da bio. Se aponta só para WhatsApp ou para um link genérico, há espaço.</li></ul>
+<p>Exemplos de busca na Lupify: barbearia + Fortaleza, clínica de estética + Recife, pizzaria + Manaus, estética automotiva + Jundiaí.</p>
+<h3>Três tipos de oportunidade</h3>
+<ol><li>Empresa sem site próprio.</li><li>Site desatualizado, lento ou ruim no celular.</li><li>Presença digital boa, mas com algo a melhorar (agendamento, cardápio, galeria).</li></ol>
+<h3>Planilha de leads</h3>
+<div class="tbl"><table><tr><th>Empresa</th><th>Nicho</th><th>Cidade</th><th>Origem</th><th>Canal público</th><th>Situação</th><th>Potencial</th></tr><tr><td>(exemplo)</td><td>Barbearia</td><td>—</td><td>Lupify</td><td>WhatsApp comercial</td><td>Sem site</td><td>Alto</td></tr></table></div>
+<p>Classifique por potencial: <b>alto</b> (sem site e com negócio ativo), <b>médio</b> (site fraco) e <b>baixo</b> (já bem atendido).</p>
+<div class="warn"><b>Atenção</b>Nunca invente empresas, contatos ou dados. Registre apenas o que você viu em canais públicos.</div>
+</section>
+
+<section class="sec" id="c3">
+<h2>3. Como encontrar o responsável</h2>
+<p class="sub">Use só canais comerciais públicos.</p>
+<ol><li>Localize o contato oficial: WhatsApp comercial, e-mail do site ou mensagem direta do perfil da empresa.</li><li>Apresente-se de forma breve e peça educadamente para falar com o proprietário ou gerente.</li><li>Se responder um atendente, seja gentil e peça que encaminhe o recado.</li><li>Não use dados pessoais obtidos fora de canais comerciais e não aceite informação sem confirmar a fonte.</li></ol>
+</section>
+
+<section class="sec" id="c4">
+<h2>4. Como prospectar e vender</h2>
+<p class="sub">Mensagens curtas, humanas e sem promessas de resultado.</p>
+<h3>Primeira abordagem</h3>
+<div class="pr"><button type="button">Copiar</button>Olá, tudo bem? Meu nome é [seu nome], da Vitra Sites. Encontrei a [empresa] em uma pesquisa e gostei do trabalho de vocês. Notei que ainda não há um site próprio e preparei uma ideia de como ele poderia ficar. Posso falar com o responsável?</div>
+<h3>Pedido para falar com o proprietário</h3>
+<div class="pr"><button type="button">Copiar</button>Obrigado pelo retorno! Poderia me indicar o melhor horário para falar com o proprietário ou gerente? É um assunto rápido sobre a presença online da [empresa].</div>
+<h3>Demonstração e proposta</h3>
+<div class="pr"><button type="button">Copiar</button>Montei uma prévia pensando na [empresa], com [serviços/cardápio/agendamento]. Segue o link: [link]. Fica à vontade para dizer o que mudaria. Se fizer sentido, preparo uma proposta com prazo e valores.</div>
+<h3>Follow-up educado</h3>
+<div class="pr"><button type="button">Copiar</button>Oi, [nome]! Passando para saber se você conseguiu ver a prévia. Se preferir, ajusto algo ou explico melhor. Sem pressa.</div>
+<h3>Objeções comuns</h3>
+<ul><li><b>“Está caro.”</b> Detalhe o que está incluído e ofereça um pacote menor.</li><li><b>“Já tenho uma plataforma.”</b> Pergunte o que funciona e o que falta; ofereça melhorias, não troca.</li><li><b>“Não tenho interesse.”</b> Agradeça e encerre com respeito: “Obrigado pelo retorno! Fico à disposição se precisar no futuro.”</li></ul>
+<div class="tip"><b>Fechamento</b>Confirme escopo, prazo, forma de pagamento e o que o cliente precisa enviar (logo, fotos, textos). Combine os próximos passos por escrito.</div>
+</section>
+
+<section class="sec" id="c5">
+<h2>5. Como usar o ChatGPT</h2>
+<p class="sub">Contexto bom gera projeto bom.</p>
+<p>Forneça: nome e ramo do negócio, cidade, serviços, público, cores, referências, links públicos, funcionalidades e objetivo comercial (ex.: pedir orçamento pelo WhatsApp).</p>
+<h3>Analisar o negócio</h3>
+<div class="pr"><button type="button">Copiar</button>Analise este negócio a partir das informações abaixo: [dados]. Liste pontos fortes, serviços, público-alvo e o que um site precisaria mostrar. Não invente informações; marque o que faltar como “a confirmar”.</div>
+<h3>Analisar um lead da Lupify</h3>
+<div class="pr"><button type="button">Copiar</button>Analise este lead para venda de site:
+Empresa: [nome]
+Nicho: [nicho]
+Cidade: [cidade]
+Instagram: [link]
+Situação: [sem site / site desatualizado]
+Responda com: 1) pontos fortes; 2) o que um site resolveria; 3) seções ideais; 4) uma mensagem curta de primeira abordagem para WhatsApp, humana e sem promessas de resultado. Não invente informações; marque como “a confirmar” o que faltar.</div>
+<h3>Planejar o site</h3>
+<div class="pr"><button type="button">Copiar</button>Planeje um site para [negócio] com seções, textos curtos e chamadas para ação. Objetivo: [objetivo]. Estilo: [cores e referências]. Priorize celular e acessibilidade.</div>
+<h3>Criar o site completo</h3>
+<div class="pr"><button type="button">Copiar</button>Crie um site completo em HTML, CSS e JavaScript, em um único arquivo index.html, para [negócio] em [cidade]. Seções: início, serviços, galeria, depoimentos reais (se eu fornecer), localização e contato. Botão de WhatsApp: [número]. Design: [cores]. Responsivo, rápido, com textos alternativos nas imagens. Não invente dados.</div>
+<h3>Variações por nicho</h3>
+<ul><li><b>Cardápio digital:</b> categorias, preços, carrinho e envio do pedido pelo WhatsApp.</li><li><b>Imobiliária:</b> lista de imóveis com filtros e contato por imóvel.</li><li><b>Clínica:</b> serviços, equipe, localização e agendamento.</li><li><b>Barbearia:</b> serviços, horários e agendamento por WhatsApp.</li><li><b>Estética automotiva:</b> pacotes, galeria antes e depois e orçamento.</li></ul>
+<h3>Corrigir bugs</h3>
+<div class="pr"><button type="button">Copiar</button>Este é meu código: [código]. O problema é: [descreva o que acontece e o que deveria acontecer]. Corrija mantendo o restante igual e explique a alteração.</div>
+<div class="warn"><b>Revise sempre</b>A IA pode errar e inventar. Confira textos, preços, telefones e links antes de mostrar ao cliente.</div>
+</section>
+
+<section class="sec" id="c6">
+<h2>6. Como criar um site do zero</h2>
+<p class="sub">Do prompt aos arquivos.</p>
+<dl><dt>HTML</dt><dd>estrutura e conteúdo da página.</dd><dt>CSS</dt><dd>aparência: cores, fontes e layout.</dd><dt>JavaScript</dt><dd>comportamento: menus, carrinho, filtros.</dd><dt>React e Next.js</dt><dd>ferramentas para projetos maiores; exigem instalação e build. Para começar, HTML puro basta.</dd></dl>
+<h3>Projeto demonstrativo</h3>
+<div class="pr">meu-site/
+├── index.html
+├── style.css
+├── script.js
+└── imagens/</div>
+<ol><li>Crie a pasta e os arquivos e cole o código gerado.</li><li>Abra o index.html no navegador (duplo clique).</li><li>Teste no celular e no computador, clique em todos os botões e links.</li><li>Se algo quebrar, copie o erro e peça a correção.</li></ol>
+<p>Boas práticas: use imagens com autorização do cliente, textos alternativos, contraste adequado e não colete dados pessoais sem necessidade.</p>
+</section>
+
+<section class="sec" id="c7">
+<h2>7. Publicar usando o GitHub</h2>
+<p class="sub">Guarde o projeto e prepare a hospedagem.</p>
+<ol><li>Crie sua conta em <a href="https://github.com" rel="noopener">github.com</a> e confirme o e-mail.</li><li>Clique em <b>New repository</b> e dê um nome (ex.: site-barbearia).</li><li>Escolha <b>Public</b> (qualquer pessoa vê o código) ou <b>Private</b> (só você e quem convidar). Para projetos de clientes, prefira privado.</li><li>Envie os arquivos pela opção <b>Add file → Upload files</b>.</li><li>Clique em <b>Commit changes</b>. Commit é o registro de uma alteração, com uma mensagem curta.</li><li>Confira se está no repositório certo olhando o nome no topo da página.</li></ol>
+<div class="warn"><b>Segurança</b>Nunca envie senhas, chaves de API ou arquivos .env. Quem vê o repositório pode ver tudo que está nele.</div>
+<p>Documentação oficial: <a href="https://docs.github.com" rel="noopener">docs.github.com</a>.</p>
+</section>
+
+<section class="sec" id="c8">
+<h2>8. Hospedar usando a Vercel</h2>
+<p class="sub">Do repositório à URL pública.</p>
+<div class="flow"><span>GitHub</span><i>→</i><span>Importar</span><i>→</i><span>Deploy</span><i>→</i><span>URL</span></div>
+<ol><li>Crie sua conta em <a href="https://vercel.com" rel="noopener">vercel.com</a>, entrando com o GitHub.</li><li>Autorize o acesso ao repositório.</li><li>Importe o projeto e confira as configurações. Para HTML puro, normalmente não é preciso build.</li><li>Clique em <b>Deploy</b>.</li><li>Abra a URL gerada (termina em .vercel.app) e teste todas as páginas no celular.</li><li>Se falhar, leia o log de erros do deploy e peça a correção.</li><li>Para atualizar, envie um novo commit ao GitHub: a Vercel publica de novo.</li><li>Para domínio próprio, adicione-o nas configurações do projeto e siga as instruções de DNS.</li></ol>
+<h3>Preview, deployment e produção</h3>
+<ul><li><b>Deployment:</b> cada publicação feita.</li><li><b>Preview:</b> deployment para testar alterações antes de ir ao ar.</li><li><b>Produção:</b> a versão oficial que o público acessa.</li></ul>
+<p>A configuração varia conforme a tecnologia e os recursos variam conforme o plano. Confirme em <a href="https://vercel.com/docs" rel="noopener">vercel.com/docs</a>.</p>
+</section>
+
+<section class="sec" id="c9">
+<h2>9. Apresentar e entregar o site</h2>
+<div class="pr"><button type="button">Copiar</button>Olá, [nome]! A prévia do site está pronta: [link]. Veja no celular e no computador e me diga o que gostaria de ajustar. Incluo até [número] rodadas de revisão.</div>
+<div class="pr"><button type="button">Copiar</button>Ajustes feitos! A versão final está aqui: [link]. Se estiver tudo certo, me confirme a aprovação para eu publicar e passar as orientações finais.</div>
+<p>Na entrega, combine por escrito quem será dono do repositório, do domínio e da hospedagem, e se haverá manutenção mensal.</p>
+</section>
+
+<section class="sec" id="c10">
+<h2>10. Preços e profissionalização</h2>
+<p>Calcule considerando complexidade, prazo, revisões, integrações e suporte. Separe o valor de criação (pago uma vez) dos custos recorrentes (domínio, manutenção).</p>
+<div class="tbl"><table><tr><th>Pacote (hipotético)</th><th>Inclui</th></tr><tr><td>Básico</td><td>Página única, WhatsApp</td></tr><tr><td>Completo</td><td>Várias seções, galeria, SEO básico</td></tr><tr><td>Avançado</td><td>Cardápio ou agendamento, integrações</td></tr></table></div>
+<div class="warn"><b>Importante</b>Exemplos servem só para organizar sua tabela. Não são preços de mercado nem garantia de ganho. Defina valores conforme sua realidade.</div>
+</section>
+
+<section class="sec" id="c11">
+<h2>11. Rotina de prospecção</h2>
+<ol><li>Pesquise e registre novos leads.</li><li>Envie as abordagens do dia.</li><li>Faça follow-up nos que responderam.</li><li>Revise a planilha no fim do dia.</li></ol>
+<p>Indicadores: leads pesquisados, mensagens enviadas, respostas, demonstrações apresentadas e fechamentos. A cada semana, veja o que funcionou e ajuste a abordagem.</p>
+</section>
+
+<section class="sec" id="c12">
+<h2>12. Biblioteca de prompts</h2>
+<p>Reúna os prompts dos capítulos 4 e 5. Organize por <b>nicho</b>, <b>etapa</b> (pesquisa, planejamento, criação, correção) e <b>objetivo</b> (orçamento, agendamento, pedido). Salve em um documento seu e personalize antes de usar.</p>
+</section>
+
+<section class="sec" id="c13">
+<h2>13. Checklist profissional</h2>
+<h3>Pesquisa e abordagem</h3>
+<ul class="ck"><li>Lead da Lupify conferido no Google e no Instagram</li><li>Contato vindo de canal público</li><li>Lead registrado na planilha</li><li>Mensagem personalizada</li></ul>
+<h3>Briefing e desenvolvimento</h3>
+<ul class="ck"><li>Serviços, cores e contato confirmados</li><li>Imagens autorizadas</li><li>Responsivo e acessível</li></ul>
+<h3>Testes, publicação e entrega</h3>
+<ul class="ck"><li>Links e botões testados</li><li>Nenhuma senha no repositório</li><li>URL testada no celular</li><li>Acessos e manutenção combinados</li></ul>
+</section>
+
+<section class="sec" id="glo">
+<h2>Glossário e referências</h2>
+<dl><dt>Deploy</dt><dd>publicar uma versão do site.</dd><dt>Repositório</dt><dd>pasta online que guarda o projeto.</dd><dt>Commit</dt><dd>registro de uma alteração.</dd><dt>DNS</dt><dd>sistema que liga um domínio ao site.</dd><dt>Lead</dt><dd>possível cliente.</dd><dt>Lupify</dt><dd>programa de captação de clientes usado para buscar leads.</dd></dl>
+<p><a href="https://docs.github.com" rel="noopener">GitHub Docs</a> · <a href="https://vercel.com/docs" rel="noopener">Vercel Docs</a> · <a href="https://developer.mozilla.org/pt-BR/" rel="noopener">MDN Web Docs</a></p>
+</section>
+</main>
+<footer><div class="w">© Vitra Sites. Material educativo; sem garantia de resultados.</div></footer>
+<script>
+document.querySelectorAll('.pr button').forEach(function(b){b.addEventListener('click',function(){
+var t=b.parentElement.innerText.replace(/^Copiar\s*/,'').replace(/^Copiado!\s*/,'');
+try{navigator.clipboard.writeText(t);b.textContent='Copiado!';setTimeout(function(){b.textContent='Copiar'},1500)}catch(e){}
+})});
+</script>
+</body>
+</html>
